@@ -1,0 +1,62 @@
+1) Qual o ID do pokemon Lucario?
+SELECT * FROM 'POKEDEX' Where nome = 'lucario'
+448
+
+
+2) Qual a média de altura dos pokemons que são lendarios?
+SELECT AVG (ALTURA) FROM `pokedex` where lendario = 1
+
+3) Quais pokemons são mais pesados pela média: os dos tipos rock ou do tipo stell?
+select avg (peso) from `pokedex` where tipo1 = 'rock' or tipo2 = 'rock'
+960.8182
+select avg (peso) from `pokedex` where tipo1 = 'rock' or tipo2 = 'steel'
+916.7333
+select avg (peso) from `pokedex` where tipo1 = 'steel' or tipo2 = 'steel'
+1471.3696
+select avg (peso) from `pokedex` where tipo1 = 'steel' or tipo2 = 'rock'
+1561.6857
+
+4) Traduzir os tipos dos pokemons.
+
+UPDATE pokedex SET tipo1 = 'lutador' WHERE tipo1 = 'fighting';
+UPDATE pokedex SET tipo2 = 'lutador' WHERE tipo2 = 'fighting';
+UPDATE pokedex SET tipo1 = 'voador' WHERE tipo1 = 'flying';
+UPDATE pokedex SET tipo2 = 'voador' WHERE tipo2 = 'flying';
+UPDATE pokedex SET tipo1 = 'veneno' WHERE tipo1 = 'poison';
+UPDATE pokedex SET tipo2 = 'veneno' WHERE tipo2 = 'poison';
+UPDATE pokedex SET tipo1 = 'terrestre' WHERE tipo1 = 'ground';
+UPDATE pokedex SET tipo2 = 'terrestre' WHERE tipo2 = 'ground';
+UPDATE pokedex SET tipo1 = 'pedra' WHERE tipo1 = 'rock';
+UPDATE pokedex SET tipo2 = 'pedra' WHERE tipo2 = 'rock';
+UPDATE pokedex SET tipo1 = 'inseto' WHERE tipo1 = 'bug';
+UPDATE pokedex SET tipo2 = 'inseto' WHERE tipo2 = 'bug';
+UPDATE pokedex SET tipo1 = 'fantasma' WHERE tipo1 = 'ghost';
+UPDATE pokedex SET tipo2 = 'fantasma' WHERE tipo2 = 'ghost';
+UPDATE pokedex SET tipo1 = 'metal' WHERE tipo1 = 'steel';
+UPDATE pokedex SET tipo2 = 'metal' WHERE tipo2 = 'steel';
+UPDATE pokedex SET tipo1 = 'fogo' WHERE tipo1 = 'fire';
+UPDATE pokedex SET tipo2 = 'fogo' WHERE tipo2 = 'fire';
+UPDATE pokedex SET tipo1 = 'agua' WHERE tipo1 = 'water';
+UPDATE pokedex SET tipo2 = 'agua' WHERE tipo2 = 'water';
+UPDATE pokedex SET tipo1 = 'planta' WHERE tipo1 = 'grass';
+UPDATE pokedex SET tipo2 = 'planta' WHERE tipo2 = 'grass';
+UPDATE pokedex SET tipo1 = 'eletrico' WHERE tipo1 = 'electric';
+UPDATE pokedex SET tipo2 = 'eletrico' WHERE tipo2 = 'electric';
+UPDATE pokedex SET tipo1 = 'psiquico' WHERE tipo1 = 'psychic';
+UPDATE pokedex SET tipo2 = 'psiquico' WHERE tipo2 = 'psychic';
+UPDATE pokedex SET tipo1 = 'gelo' WHERE tipo1 = 'ice';
+UPDATE pokedex SET tipo2 = 'gelo' WHERE tipo2 = 'ice';
+UPDATE pokedex SET tipo1 = 'dragao' WHERE tipo1 = 'dragon';
+UPDATE pokedex SET tipo2 = 'dragao' WHERE tipo2 = 'dragon';
+UPDATE pokedex SET tipo1 = 'sombrio' WHERE tipo1 = 'dark';
+UPDATE pokedex SET tipo2 = 'sombrio' WHERE tipo2 = 'dark';
+UPDATE pokedex SET tipo1 = 'fada' WHERE tipo1 = 'fairy';
+UPDATE pokedex SET tipo2 = 'fada' WHERE tipo2 = 'fairy';
+
+
+5) Utilizando o site https://serebii.net/pokedex-swsh/ encontre os pokemon com os IDs 80, 122, 149 e insira-os na tabela.
+#080 Slowbro
+#122 Mr. Mime
+#149 Dragonite
+
+
