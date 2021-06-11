@@ -1,4 +1,4 @@
-package src;
+package gabs;
 
 import java.util.*;
 
@@ -32,100 +32,100 @@ public class cinema
 		String nome = sc.nextLine();
 		while (continuar) {
 			System.out.println(nome
-					+ ", em nossa programaÁ„o estamos com dois filmes: \n 1.'As branquelas'\n 2.'A chegada' \nQual deles vocÍ gostaria de assistir? ");
+					+ ", em nossa programa√ß√£o estamos com dois filmes: \n 1.'As branquelas'\n 2.'A chegada' \nQual deles voc√™ gostaria de assistir? ");
 
 
 			int opcao = sc.nextInt();
 			if (opcao == 1) {
 				System.out.println(
-						"\nLegal, nÛs temos a sala Alpha para atende-lo.\nAgora preciso saber quantos ingressos vocÍ ir· comprar.");
+						"\nLegal, n√≥s temos a sala Alpha para atende-lo.\nAgora preciso saber quantos ingressos voc√™ ir√° comprar.");
 				int numberING = sc.nextInt();
 				System.out.println(
-						"\nBoa escolha!\nMe diga agora em qual fileira vocÍ deseja comprar \n( A ):"+SalaAlphaA + "\n( B ):" + SalaAlphaB +"\n( C ):"+SalaAlphaC+"\n( D ):" + SalaAlphaD +"\n( E ):" +SalaAlphaE+"\n( PcD ):"+AlphaD +". \nTenha em mente que se vocÍ for deficiente temos um assento especial para vocÍ, para isso escreva 'PcD' ");
+						"\nBoa escolha!\nMe diga agora em qual fileira voc√™ deseja comprar \n( A ):"+SalaAlphaA + "\n( B ):" + SalaAlphaB +"\n( C ):"+SalaAlphaC+"\n( D ):" + SalaAlphaD +"\n( E ):" +SalaAlphaE+"\n(PcD):"+AlphaD +". \nTenha em mente que se voc√™ for deficiente temos um assento especial para voc√™, para isso escreva 'PcD' ");
 				String fileira = sc.next();
 				int disponiveis = SalaAlpha;
 
 				switch (fileira) {
 				case "A","a":
 					if (numberING > SalaAlphaA) {
-						System.out.println("\nPoxa mano, vocÍ quer mais ingressos do que essa fileira oferece!");
+						System.out.println("\nPoxa mano, voc√™ quer mais ingressos do que essa fileira oferece!");
 						break;
 
 					} else {
 						SalaAlphaA = SalaAlphaA - numberING;
 						System.out.println("\nBaita fileira bacana, agora teremos " + SalaAlphaA
-								+ " cadeiras disponiveis nessa fileira\n , seus ingressos foram comprados com sucesso. Aproveite a pipoca gr·tis e tenha um bom filme");
+								+ " cadeiras disponiveis nessa fileira\n , seus ingressos foram comprados com sucesso. Aproveite a pipoca gr√°tis e tenha um bom filme");
 						SalaAlpha = (SalaAlpha - numberING);
 						break;
 					}
 				case "B","b":
 					if (numberING > SalaAlphaB) {
-						System.out.println("\nPoxa mano, vocÍ quer mais ingressos do que essa fileira oferece!");
+						System.out.println("\nPoxa mano, voc√™ quer mais ingressos do que essa fileira oferece!");
 						break;
 					} else {
 						SalaAlphaB = SalaAlphaB - numberING;
 						System.out.println("\nBaita fileira bacana, agora teremos " + SalaAlphaB
-								+ " cadeiras disponiveis nessa fileira\n , seus ingressos foram comprados com sucesso. Aproveite a pipoca gr·tis e tenha um bom filme");
+								+ " cadeiras disponiveis nessa fileira\n , seus ingressos foram comprados com sucesso. Aproveite a pipoca gr√°tis e tenha um bom filme");
 						SalaAlpha = (SalaAlpha - numberING);
 						break;
 					}
 				case "C","c":
 					if (numberING > SalaAlphaC) {
-						System.out.println("\nPoxa mano, vocÍ quer mais ingressos do que essa fileira oferece!");
+						System.out.println("\nPoxa mano, voc√™ quer mais ingressos do que essa fileira oferece!");
 						break;
 					} else {
 						SalaAlphaC = SalaAlphaC - numberING;
 						System.out.println("\nBaita fileira bacana, agora teremos " + SalaAlphaC
-								+ " cadeiras disponiveis nessa fileira\n , seus ingressos foram comprados com sucesso. Aproveite a pipoca gr·tis e tenha um bom filme");
+								+ " cadeiras disponiveis nessa fileira\n , seus ingressos foram comprados com sucesso. Aproveite a pipoca gr√°tis e tenha um bom filme");
 						SalaAlpha = SalaAlpha - numberING;
 						break;
 					}
 				case "D","d":
 					if (numberING > SalaAlphaD) {
-						System.out.println("Poxa mano, vocÍ quer mais ingressos do que essa fileira oferece!");
+						System.out.println("Poxa mano, voc√™ quer mais ingressos do que essa fileira oferece!");
 						break;
 					} else {
 						SalaAlphaD = SalaAlphaD - numberING;
 						System.out.println("\nBaita fileira bacana, agora teremos " + SalaAlphaD
-								+ " cadeiras disponiveis nessa fileira\n , seus ingressos foram comprados com sucesso. Aproveite a pipoca gr·tis e tenha um bom filme");
+								+ " cadeiras disponiveis nessa fileira\n , seus ingressos foram comprados com sucesso. Aproveite a pipoca gr√°tis e tenha um bom filme");
 						SalaAlpha = (SalaAlpha - numberING);
 						break;
 					}
 				case "E","e":
 					if (numberING > SalaAlphaE) {
-						System.out.println("\nPoxa mano, vocÍ quer mais ingressos do que essa fileira oferece!");
+						System.out.println("\nPoxa mano, voc√™ quer mais ingressos do que essa fileira oferece!");
 						break;
 					} else {
 						SalaAlphaE = SalaAlphaE - numberING;
 						System.out.println("\nBaita fileira bacana, agora teremos " + SalaAlphaE
-								+ " cadeiras disponiveis nessa fileira\n , seus ingressos foram comprados com sucesso. Aproveite a pipoca gr·tis e tenha um bom filme");
+								+ " cadeiras disponiveis nessa fileira\n , seus ingressos foram comprados com sucesso. Aproveite a pipoca gr√°tis e tenha um bom filme");
 						SalaAlpha = (SalaAlpha - numberING);
 						break;
 					}
 				case "F","f":
 					if (numberING > SalaAlphaF) {
-						System.out.println("\nPoxa mano, vocÍ quer mais ingressos do que essa fileira oferece!");
+						System.out.println("\nPoxa mano, voc√™ quer mais ingressos do que essa fileira oferece!");
 						break;
 					} else {
 						SalaAlphaF = SalaAlphaF - numberING;
 						System.out.println("\nBaita fileira bacana, agora teremos " + SalaAlphaF
-								+ " cadeiras disponiveis nessa fileira\n , seus ingressos foram comprados com sucesso. Aproveite a pipoca gr·tis e tenha um bom filme");
+								+ " cadeiras disponiveis nessa fileira\n , seus ingressos foram comprados com sucesso. Aproveite a pipoca gr√°tis e tenha um bom filme");
 						SalaAlpha = (SalaAlpha - numberING);
 						break;
 					}
 				case "pcd","PCD","PcD","Pcd":
 					if (numberING > AlphaD) {
-						System.out.println("\nPoxa mano, vocÍ quer mais ingressos do que essa fileira oferece!");
+						System.out.println("\nPoxa mano, voc√™ quer mais ingressos do que essa fileira oferece!");
 						break;
 					} else {
 						AlphaD = AlphaD - numberING;
 						System.out.println("\nBaita fileira bacana, agora teremos " + AlphaD
-								+ " cadeiras disponiveis nessa fileira\n , seus ingressos foram comprados com sucesso. Aproveite a pipoca gr·tis e tenha um bom filme");
+								+ " cadeiras disponiveis nessa fileira\n , seus ingressos foram comprados com sucesso. Aproveite a pipoca gr√°tis e tenha um bom filme");
 						SalaAlpha = (SalaAlpha - numberING);
 						break;
 					}
 				default:
-					System.out.println("\nPutz, fileira n„o encontrada. Comece dnv!");
+					System.out.println("\nPutz, fileira n√£o encontrada. Comece dnv!");
 					break;
 
 				}
@@ -141,83 +141,83 @@ public class cinema
 			} else if (opcao == 2) {
           if (opcao == 2) {
           System.out.println(
-              "Legal, nÛs temos a sala Beta para atende-lo.\nAgora preciso saber quantos ingressos vocÍ ir· comprar.");
+              "Legal, n√≥s temos a sala Beta para atende-lo.\nAgora preciso saber quantos ingressos voc√™ ir√° comprar.");
           int numberING = sc.nextInt();
-          System.out.println(
-              "Boa escolha! Me diga agora em qual fileira vocÍ deseja comprar\n, tenha em mente que se vocÍ for deficiente \ntemos um assento especial para vocÍ, para isso escreva 'PcD' ");
+			System.out.println(
+				"\nBoa escolha!\nMe diga agora em qual fileira voc√™ deseja comprar \n( A ):"+SalaBetaA + "\n( B ):" + SalaBetaB +"\n( C ):"+SalaBetaC+"\n( D ):" + SalaBetaD +"\n( E ):" +SalaBetaE+"\n(PcD):"+BetaD +". \nTenha em mente que se voc√™ for deficiente temos um assento especial para voc√™, para isso escreva 'PcD' ");
           String fileira = sc.next();
           int disponiveis = SalaBeta;
   
           switch (fileira) {
           case "A","a":
             if (numberING > SalaBetaA) {
-              System.out.println("\nPoxa mano, vocÍ quer mais ingressos do que essa fileira oferece!");
+              System.out.println("\nPoxa mano, voc√™ quer mais ingressos do que essa fileira oferece!");
               break;
   
             } else {
               SalaBetaA = SalaBetaA - numberING;
               System.out.println("\nBaita fileira bacana, agora teremos " + SalaBetaA
-                  + " cadeiras disponiveis nessa fileira\n , seus ingressos foram comprados com sucesso. Aproveite a pipoca gr·tis e tenha um bom filme");
+                  + " cadeiras disponiveis nessa fileira\n , seus ingressos foram comprados com sucesso. Aproveite a pipoca gr√°tis e tenha um bom filme");
               SalaBeta = (SalaBetaA - numberING);
               break;
             }
           case "B","b":
             if (numberING > SalaBetaB) {
-              System.out.println("\nPoxa mano, vocÍ quer mais ingressos do que essa fileira oferece!");
+              System.out.println("\nPoxa mano, voc√™ quer mais ingressos do que essa fileira oferece!");
               break;
             } else {
               SalaBetaB = SalaBetaB - numberING;
               System.out.println("\nBaita fileira bacana, agora teremos " + SalaBetaB
-                  + " cadeiras disponiveis nessa fileira\n , seus ingressos foram comprados com sucesso. Aproveite a pipoca gr·tis e tenha um bom filme");
+                  + " cadeiras disponiveis nessa fileira\n , seus ingressos foram comprados com sucesso. Aproveite a pipoca gr√°tis e tenha um bom filme");
               SalaBeta = (SalaBetaB - numberING);
               break;
             }
           case "C","c":
             if (numberING > SalaBetaC) {
-              System.out.println("\nPoxa mano, vocÍ quer mais ingressos do que essa fileira oferece!");
+              System.out.println("\nPoxa mano, voc√™ quer mais ingressos do que essa fileira oferece!");
               break;
             } else {
               SalaBetaC = SalaBetaC - numberING;
               System.out.println("\nBaita fileira bacana, agora teremos " + SalaBetaC
-                  + " cadeiras disponiveis nessa fileira\n , seus ingressos foram comprados com sucesso. Aproveite a pipoca gr·tis e tenha um bom filme");
+                  + " cadeiras disponiveis nessa fileira\n , seus ingressos foram comprados com sucesso. Aproveite a pipoca gr√°tis e tenha um bom filme");
               SalaBeta = SalaBeta - numberING;
               break;
             }
           case "D","d":
             if (numberING > SalaBetaD) {
-              System.out.println("\nPoxa mano, vocÍ quer mais ingressos do que essa fileira oferece!");
+              System.out.println("\nPoxa mano, voc√™ quer mais ingressos do que essa fileira oferece!");
               break;
             } else {
               SalaBetaD = SalaBetaD - numberING;
               System.out.println("\nBaita fileira bacana, agora teremos " + SalaBetaD
-                  + " cadeiras disponiveis nessa fileira\n , seus ingressos foram comprados com sucesso. Aproveite a pipoca gr·tis e tenha um bom filme");
+                  + " cadeiras disponiveis nessa fileira\n , seus ingressos foram comprados com sucesso. Aproveite a pipoca gr√°tis e tenha um bom filme");
               SalaBeta = (SalaBeta - numberING);
               break;
             }
           case "E","e":
             if (numberING > SalaBetaE) {
-              System.out.println("\nPoxa mano, vocÍ quer mais ingressos do que essa fileira oferece!");
+              System.out.println("\nPoxa mano, voc√™ quer mais ingressos do que essa fileira oferece!");
               break;
             } else {
               SalaBetaE = SalaBetaE - numberING;
               System.out.println("Baita fileira bacana, agora teremos " + SalaBetaE
-                  + " cadeiras disponiveis nessa fileira\n , seus ingressos foram comprados com sucesso. Aproveite a pipoca gr·tis e tenha um bom filme");
+                  + " cadeiras disponiveis nessa fileira\n , seus ingressos foram comprados com sucesso. Aproveite a pipoca gr√°tis e tenha um bom filme");
               SalaBeta = (SalaBeta - numberING);
               break;
             }
           case "pcd","PCD","PcD","Pcd":
             if (numberING > BetaD) {
-              System.out.println("Poxa mano, vocÍ quer mais ingressos do que essa fileira oferece!");
+              System.out.println("Poxa mano, voc√™ quer mais ingressos do que essa fileira oferece!");
               break;
             } else {
               BetaD = BetaD - numberING;
               System.out.println("\nBaita fileira bacana, agora teremos " + BetaD
-                  + " cadeiras disponiveis nessa fileira\n , seus ingressos foram comprados com sucesso. Aproveite a pipoca gr·tis e tenha um bom filme");
+                  + " cadeiras disponiveis nessa fileira\n , seus ingressos foram comprados com sucesso. Aproveite a pipoca gr√°tis e tenha um bom filme");
               SalaBeta = (SalaBeta - numberING);
               break;
             }
           default:
-            System.out.println("Putz, fileira n„o encontrada. Comece dnv!");
+            System.out.println("Putz, fileira n√£o encontrada. Comece dnv!");
             break;
   
           }
@@ -235,28 +235,28 @@ public class cinema
 		}
 	}
 }
-// Jailson È dono de um cinema com duas salas.
+// Jailson √© dono de um cinema com duas salas.
 
 // A sala Alpha possui 140 lugares divididos em 6 fileiras (A, B, C, D, E, F)
-// com mais 12 assentos para pessoas com deficiÍncia.
+// com mais 12 assentos para pessoas com defici√™ncia.
 // A sala Beta possui 120 lugares divididos em 5 fileiras (A, B, C, D, E) com
-// mais 6 lugares para pessoas com deficiÍncia.
+// mais 6 lugares para pessoas com defici√™ncia.
 
-// Haver· uma sess„o na Sala Alpha de "As Branquelas" e outra sess„o na Sala
+// Haver√° uma sess√£o na Sala Alpha de "As Branquelas" e outra sess√£o na Sala
 // Beta de "A Chegada".
 
 // Construa um programa em que uma pessoa compre um ingresso para qualquer uma
 // das salas e possa escolher a fileira em que vai sentar.
 
-// O programa deve perguntar, em algum momento, o nome do usu·rio.
+// O programa deve perguntar, em algum momento, o nome do usu√°rio.
 
-// Uma vez que o assento seja escolhido, È necess·rio que o programa exiba
-// quantos lugares ainda est„o disponÌveis no total e tambÈm em quais fileiras.
+// Uma vez que o assento seja escolhido, √© necess√°rio que o programa exiba
+// quantos lugares ainda est√£o dispon√≠veis no total e tamb√©m em quais fileiras.
 
-// … importante que o comprador possa escolher a quantidade de ingressos que
-// quer comprar e que ele n„o possa comprar mais ingressos do que a fileira
-// tenha disponÌvel.
+// √â importante que o comprador possa escolher a quantidade de ingressos que
+// quer comprar e que ele n√£o possa comprar mais ingressos do que a fileira
+// tenha dispon√≠vel.
 
 // Ao final, o programa deve exibir a mensagem "[COMPRADOR], seus ingressos
-// foram comprados com sucesso. Aproveite a pipoca gr·tis e tenha um bom
+// foram comprados com sucesso. Aproveite a pipoca gr√°tis e tenha um bom
 // filme.".
