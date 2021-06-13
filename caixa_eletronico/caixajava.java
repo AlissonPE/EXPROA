@@ -28,7 +28,7 @@ public class caixajava {
 						
 					int opcao = sc.nextInt(); 	
 					if (opcao == 1) { 
-						System.out.print("\nSeu saldo È de: R$ " + saldo);
+						System.out.print("\nSeu saldo √© de: R$ " + saldo);
 						break;
 						
 					
@@ -61,7 +61,7 @@ public class caixajava {
 
 						saldo = saldo + deposito;
 						
-						System.out.print("Deposito realizado com sucesso\nSeu novo saldo È de " + saldo);
+						System.out.print("Deposito realizado com sucesso\nSeu novo saldo √© de " + saldo);
 						break;
 						
 					} else if (opcao == 4) {
@@ -92,20 +92,20 @@ public class caixajava {
 			}
 		}
 			
-			System.out.print("\nObrigado por utilizar o nosso Banco");
+			System.out.print( nome + "\n, obrigado por utilizar o nosso Banco");
 			sc.close();
 
 		}
 	}	
 	
-/* H· alguns erros no cÛdigo que impedem a execuÁ„o ou n„o informam os valores corretos ao usu·rio. … hora de peg·-los. 
+/* H√° alguns erros no c√≥digo que impedem a execu√ß√£o ou n√£o informam os valores corretos ao usu√°rio. √â hora de peg√°-los. 
 
-1. Quando o usu·rio informar que um valor para saque seja igual ao valor do saldo em conta, n„o È possÌvel sacar. Qual o erro e como corrigir?
+1. Quando o usu√°rio informar que um valor para saque seja igual ao valor do saldo em conta, n√£o √© poss√≠vel sacar. Qual o erro e como corrigir?
 
-2. Ao usu·rio informar que um valor para depÛsito o cÛdigo n„o est· funcionando corretamente. Qual o erro e como corrigir?
+2. Ao usu√°rio informar que um valor para dep√≥sito o c√≥digo n√£o est√° funcionando corretamente. Qual o erro e como corrigir?
 
-3. Quando houver um saque, È necess·rio informar "Saque realizado com sucesso". 
+3. Quando houver um saque, √© necess√°rio informar "Saque realizado com sucesso". 
 
-4. Quando houver um depÛsito, È necess·rio informar "Saque realizado com sucesso". 
+4. Quando houver um dep√≥sito, √© necess√°rio informar "Saque realizado com sucesso". 
 
-5. Altere o cÛdigo para incluir o nome do usu·rio no comeÁo da interaÁ„o (antes mesmo de solicitar a senha). A Mensagem de despedida deve conter o nome do usu·rio. */
+5. Altere o c√≥digo para incluir o nome do usu√°rio no come√ßo da intera√ß√£o (antes mesmo de solicitar a senha). A Mensagem de despedida deve conter o nome do usu√°rio. */
