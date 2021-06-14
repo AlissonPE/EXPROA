@@ -1,0 +1,63 @@
+body {
+  background: rgb(131, 58, 180);
+  background: linear-gradient(
+    90deg,
+    rgba(131, 58, 180, 1) 0%,
+    rgba(130, 29, 253, 1) 50%,
+    rgba(69, 153, 252, 1) 95%
+  );
+}
+
+#centralizado {
+  text-align: center;
+  font-size: 30px;
+  border: 1px solid white;
+}
+
+#caixas {
+  border: 1px solid black;
+  margin: 173px;
+}
+
+#caixa1 {
+  text-align: center;
+  display: inline-block;
+  background-color: #9c800d;
+  margin: 0;
+}
+#caixa2 {
+  text-align: center;
+  display: inline-block;
+  background-color: #e1c65a;
+  margin: 0;
+}
+#caixa3 {
+  text-align: center;
+  display: inline-block;
+  background-color: #dbb416;
+}
+#caixa4 {
+  text-align: center;
+  display: inline-block;
+  background-color: #a89547;
+}
+
+/* unvisited link */
+a:link {
+  color: white;
+}
+
+/* visited link */
+a:visited {
+  color: black;
+}
+
+/* mouse over link */
+a:hover {
+  color: rgb(0, 60, 255);
+}
+
+/* selected link */
+a:active {
+  color: blue;
+}
